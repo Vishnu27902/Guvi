@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <section class="wrapper">
+          <div class="heading">
+            <h1 class="text text-large">Login</h1>
+            <p class="text text-normal">
+              Don't you have a account?
+              <span
+                ><a href="register.html" class="text text-links"
+                  >Register</a
+                ></span
+              >
+            </p>
+          </div>
+          <form name="signin" class="form">
+            <div class="input-control">
+              <label for="email" class="input-label" hidden
+                >Email Address</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-field"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="input-control">
+              <label for="password" class="input-label" hidden>Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input-field"
+                placeholder="Password"
+              />
+            </div>
+            <div class="input-control">
+              <input
+                type="submit"
+                name="submit"
+                class="input-submit"
+                id="submit"
+                value="Sign In"
+              />
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
