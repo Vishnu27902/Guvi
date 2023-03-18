@@ -13,8 +13,7 @@
         }
     }
     catch(Exception $e){
-        echo "Mailid already exists... Try using someother ids";
-        exit;
+        die("Mailid already exists... Try using someother ids");
     }
     $servername="localhost";
     $username="root";
@@ -35,7 +34,11 @@
     $mailid=$_POST["email"];
     $password=$_POST["password"];
     $prepstats->bind_param("ss",$mailid,$password);
-    $prepstats->execute();
+    if(!$prepstats->execute())
+    {
+        die("Mailid already exists... Try using someother ids");
+    }
     $prepstats->close();
     $connection->close();
+    echo "index.html";
 ?>
